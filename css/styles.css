@@ -233,6 +233,9 @@ h1, h2, h3, p {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -280,6 +283,13 @@ h1, h2, h3, p {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+}
+.title.name-activity {
+    color: var(--secondary-ac-color);
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 .title.name-specialty {
     margin-top: var(--margin-gap-set);
@@ -358,6 +368,9 @@ h1, h2, h3, p {
     border-bottom: 1px solid #ECECEC;
     border-left: 1px solid #ECECEC;
  }
+ .card-pro {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
  .card-pro:hover,
  .card-pro:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -374,6 +387,21 @@ img {
 .img-box .item {
     flex-basis: calc((100% - var(--margin-gap-set) * 2) / 3);
     margin-left: var(--margin-gap-set);
+}
+.activity-thumb{
+    position: relative;
+}
+.activity-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    position: absolute;
+    bottom: 0;
 }
 
 .team-set {
@@ -399,6 +427,8 @@ img {
     justify-content: center;
     color: var(--icon-color-primary);
     border-radius: 50%;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box-sn-icon:hover,
 .box-sn-icon:focus {
@@ -433,6 +463,8 @@ img {
     color: var(--icon-color-primary);
     align-items: center;
     justify-content: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box-icon-client:hover,
 .box-icon-client:focus {
@@ -464,6 +496,8 @@ img {
     color: var(--secondary-ac-color);
     background-color: #ffffff1A;
     border-radius: 50%;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box-sn-icon.foot:hover,
 .box-sn-icon.foot:focus {
