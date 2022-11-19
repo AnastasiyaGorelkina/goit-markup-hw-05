@@ -51,7 +51,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button">Замовити послугу</button>
+            <button type="button" class="button" data-modal-open>Замовити послугу</button>
             </div>
         </div>
         </section>
@@ -439,6 +439,14 @@
         </div>
         
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button aria-label="Закрити" class="btn-close" data-modal-close>
+                <svg width="11px" height="11px" class="icon-close"><use href="./images/icon-dagger.svg#dagger"></use></svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
